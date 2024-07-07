@@ -1,0 +1,159 @@
+<!-- ******************************************************************************
+# Nom ......... : contenu.html
+# Rôle ........ : Interface utilisateur pour une page-web personnelle (Page Principale).
+# Auteur ...... : Maxim Khomenko
+# Version ..... : V1.1.1 du 16/01/2024
+# Licence ..... : Réalisé dans le cadre du cours de l'Informatique Fondamentale
+# Usage ....... : Ouvrez ce fichier dans un navigateur Web pour voir la page.
+****************************************************************************** -->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="thématique personnelle">
+    <meta name="keywords" content="Informations personnelles, Passions, Loisirs, Sports">
+    <meta name="author" content="Maxim Khomenko">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qui suis-je? - Maxim Khomenko</title>
+    <!-- Inclusion du style Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Inclusion du style personnalisé -->   
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <!-- Section de bienvenue -->
+    <section id="welcome">
+        <header class="text-center">
+            <p>Decouvrez plus sur Maxim Khomenko</p>
+        </header>
+
+        <!-- Barre de navigation Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <!-- Marque de navigation -->
+                <a class="navbar-brand" href="index.html">maximkh.42web.io</a>
+                <!-- Bouton de bascule pour les appareils mobiles -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Contenu de la barre de navigation -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Liens de navigation -->
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Page d'accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#a-propos-moi">A propos de moi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#passions">Passions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#loisirs">Loisirs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Section "À propos de moi" -->
+    <div id="a-propos-moi" class="container">
+        <h2 class="text-center">À propos de moi</h2>
+        <p class="highlight-bg">
+            Je m'appelle <span class="highlight">Maxim</span>, âgé de <span class="highlight">21 ans</span>, et je
+            poursuis mes études à l'Institut d'Enseignement à Distance de l'Université Paris 8. Bien que de nationalité
+            <span class="highlight">russe</span>, je réside en <span class="highlight">Thaïlande</span> depuis les douze
+            dernières années. Après avoir achevé ma scolarité dans une école française en Thaïlande, j'ai pris la
+            décision de poursuivre mes études supérieures au sein d'un établissement français. Cependant, étant donné la
+            rareté, voire l'absence d'universités francophones en Thaïlande, j'ai décidé de trouver une université
+            française proposant des programmes d'apprentissage en ligne. J'ai trouvé l'IED Paris 8.
+        </p>
+    </div>
+
+    <!-- Section "Passions" -->
+    <div id="passions" class="container">
+        <h2 class="text-center">Passions</h2>
+        <p class="highlight-bg">
+            Je suis passionné de sport, particulièrement de <span class="highlighted">badminton</span> et de
+            <span class="highlighted">jogging</span>. Le sport occupe une place centrale dans ma vie. D'abord,
+            l'activité physique me permet de rester en forme et de maintenir une bonne santé. Ensuite, l'activité
+            physique stimule la production d'endorphines ce qui contribue à mon bien-être émotionnel.
+        </p>
+        <!-- Utilisation d'une grille pour disposer les images côte à côte -->
+        <div class="row">
+            <!-- Première image avec lien vers le badminton -->
+            <figure class="col-md-6">
+                <a href="https://fr.wikipedia.org/wiki/Badminton" target="_blank">
+                    <img src="badminton.jpg" alt="Badminton" class="img-fluid">
+                </a>
+                <figcaption> Qu'est-ce que le badminton? (image cliquable) </figcaption>
+            </figure>
+            <!-- Deuxième image avec lien vers le jogging -->
+            <figure class="col-md-6">
+                <a href="https://fr.wikipedia.org/wiki/Jogging_(sport)" target="_blank">
+                    <img src="pexels-pixabay-235922.jpg" alt="Jogging" class="img-fluid">
+                </a>
+                <figcaption> Qu'est-ce que le jogging? (image cliquable) </figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <!-- Section "Loisirs" -->
+    <div id="loisirs" class="container">
+        <h2 class="text-center">Loisirs</h2>
+
+        <!-- Sous-section "Sorties avec Amis" -->
+        <div id="sorties-amis">
+            <h3>Sorties avec Amis</h3>
+            <p class="highlight-bg">
+                J'aime bien sortir avec mes amis, car c'est un moment agréable qui apporte de la joie à ma vie. On
+                discute, on rigole ensemble. Ces instants me permettent de me détendre. Les rencontres avec les amis
+                renforcent les liens sociaux et créent des souvenirs précieux.
+            </p>
+        </div>
+
+        <!-- Sous-section "Jeux vidéos" -->
+        <div id="jeux-video">
+            <h3>Jeux vidéos</h3>
+            <p class="highlight-bg">
+                J'apprécie jouer aux jeux vidéo parce qu'ils me permettent de faire une pause dans la vie quotidienne. Les
+                mondes fascinants à explorer et les histoires captivantes à vivre offrent une évasion immersive. Deux
+                jeux que j'ai particulièrement aimés sont <em>"The Witcher 3"</em> et <em>"Cyberpunk 2077"</em>.
+                Ces expériences virtuelles me transportent dans des univers riches en aventures, ajoutant une dimension
+                ludique et divertissante à ma routine.
+            </p>
+            <!-- Utilisation d'une grille pour disposer les images côte à côte -->
+            <div class="row">
+                <!-- Première image avec lien vers The Witcher 3 -->
+                <figure class="col-md-6">
+                    <a href="https://fr.wikipedia.org/wiki/The_Witcher_3:_Wild_Hunt" target="_blank">
+                        <img src="1299891.png" alt="The Witcher 3" class="img-fluid">
+                    </a>
+                    <figcaption> The Witcher 3 (image cliquable) </figcaption>
+                </figure>
+                <!-- Deuxième image avec lien vers Cyberpunk 2077 -->
+                <figure class="col-md-6">
+                    <a href="https://fr.wikipedia.org/wiki/Cyberpunk_2077" target="_blank">
+                        <img src="1330768.png" alt="Cyberpunk 2077" class="img-fluid">
+                    </a>
+                    <figcaption> Cyberpunk 2077 (image cliquable) </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pied de page avec les informations de contact -->
+    <footer id="contact" class="text-center">
+        <p>Mon adresse e-mail: maxim.khomenko18@gmail.com</p>
+    </footer>
+
+    <!-- Scripts Bootstrap pour les fonctionnalités avancées -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

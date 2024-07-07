@@ -1,0 +1,235 @@
+/* ******************************************************************************
+# Nom ......... : style.css
+# Rôle ........ : Définition des styles pour la mise en page et la présentation.
+# Auteur ...... : Maxim Khomenko
+# Version ..... : V1.0.2 du 07/06/2024
+# Licence ..... : Réalisé dans le cadre du cours de l'Informatique Fondamentale
+# Usage ....... : Ce fichier CSS doit être lié à une page HTML pour appliquer les
+#                 styles définis aux différents éléments de la page.
+****************************************************************************** */
+
+/* Réinitialiser marges et rembourrages par défaut */
+body, h1, h2, h3, p, figure {
+    margin: 0;
+    padding: 0;
+}
+
+/* Définir la couleur de fond de toute la page */
+body {
+    background-color: #808080; /* Couleur grise */
+    color: #fff; /* Couleur du texte pour un meilleur contraste */
+    font-family: 'Arial', sans-serif; /* Style de police générale */
+}
+
+/* Style de la section d'en-tête */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style de la section "À propos de moi" */
+#a-propos-moi {
+    margin: 0 auto; /* Centrer la section */
+    border-radius: 8px; /* Coins arrondis pour un aspect plus doux */
+}
+
+/* Style du titre "À propos de moi" */
+#a-propos-moi h2 {
+    text-align: center; /* Centrer le texte */
+}
+
+/* Style du paragraphe dans "À propos de moi" */
+#a-propos-moi p {
+    padding: 15px; /* Rembourrage */
+}
+
+.highlight {
+    font-weight: bold; /* Gras */
+    font-style: italic; /* Italique */
+}
+
+.highlighted {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Style de la section "Passions" */
+#passions {
+    margin: 0 auto; /* Centrer la section */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Style du titre "Passions" */
+#passions h2 {
+    text-align: center; /* Centrer le texte */
+}
+
+/* Style des images dans la section "Passions" */
+#passions img {
+    display: block;
+    margin: auto; /* Centrer l'image */
+    margin-top: 10px;
+    max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de son conteneur */
+    max-height: 100%; /* Assure que l'image ne dépasse pas la hauteur de son conteneur */
+    border: 2px solid #000; /* Bordure noire autour des images */
+    border-radius: 8px; /* Coins arrondis */
+}
+
+/* Effacer le flottement après les images dans la section "Passions" */
+#passions::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style des légendes des images dans la section "Passions" */
+#passions figcaption {
+    text-align: center; /* Centrer le texte à l'intérieur de la légende */
+    margin-top: 5px; /* Un espacement en haut de la légende */
+    clear: both; /* Effacer le flottement des légendes */
+}
+
+/* Style de la section "Loisirs" */
+#loisirs {
+    margin: 0 auto; /* Centrer la section */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Style du titre "Loisirs" */
+#loisirs h2 {
+    text-align: center; /* Centrer le texte */
+}
+
+/* Style pour le sous-section "Sorties avec Amis" */
+#sorties-amis {
+    margin-top: 20px;
+}
+
+/* Style du titre "Sorties avec Amis" */
+#sorties-amis h3 {
+    text-align: center; /* Centrer le texte */
+}
+
+/* Style du paragraphe dans "Sorties avec Amis" */
+#sorties-amis p {
+    padding: 15px; /* Rembourrage */
+    border-radius: 8px; /* Coins arrondis */
+}
+
+/* Style de la section "jeux-video" */
+#jeux-video {
+    margin: 0 auto; /* Centrer las section */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Style du titre "Jeux vidéos" */
+#jeux-video h3 {
+    text-align: center; /* Centrer le texte */
+}
+
+/* Style du paragraphe dans "Jeux vidéos" */
+#jeux-video p {
+    padding: 15px; /* Rembourrage */
+    border-radius: 8px; /* Coins arrondis */
+}
+
+/* Style des images dans la section "Jeux vidéos" */
+#jeux-video img {
+    display: block;
+    margin: auto; /* Centrer l'image */
+    margin-top: 10px;
+    max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de son conteneur */
+    max-height: 100%; /* Assure que l'image ne dépasse pas la hauteur de son conteneur */
+    border: 2px solid #000; /* Bordure noire autour des images */
+    border-radius: 8px; /* Coins arrondis */
+}
+
+/* Clearfix pour effacer correctement les éléments flottants */
+#jeux-video::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style des légendes des images dans la section "Jeux vidéos" */
+#jeux-video figcaption {
+    text-align: center; /* Centrer le texte */
+    margin-top: 5px; /* Un espacement en haut de la légende */
+    clear: both; /* Effacer le flottement des légendes */
+}
+
+/* Style de la section du pied de page */
+#contact {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#contact-fixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Styles pour la barre de navigation */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Clearfix pour effacer correctement les éléments flottants */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Style pour les paragraphes */
+p {
+    border: 1px solid #ddd; /* Style et couleur de la bordure */
+    padding: 10px; /* Rembourrage */
+    margin-bottom: 15px; /* Une marge pour créer de l'espace entre les paragraphes */
+    margin: 0 auto;
+}
+
+/* Style pour les paragraphes spécifiques avec la classe */
+.highlight-bg {
+    background-color: #001f3f; /* Couleur bleu foncé */
+    color: #fff; /* Texte blanc pour un meilleur contraste */
+    padding: 15px; /* Rembourrage pour un meilleur espacement */
+    border-radius: 8px; /* Coins arrondis pour un aspect plus doux */
+}
+
+#image-daccueil {
+    text-align: center; /* Centrer le contenu horizontalement */
+    margin-top: 20px; /* Une marge en haut pour l'espace */
+}
+
+.figure-center img {
+    width: 80%; /* La largeur de l'image à 80% de la largeur de son conteneur */
+    height: auto; /* La hauteur s'ajuste automatiquement en fonction de la largeur */
+    display: block; /* Centrer l'image */
+    margin: 0 auto; /* Centrer l'image horizontalement dans son conteneur */
+    border: 5px solid #000;
+}

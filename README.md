@@ -8,7 +8,7 @@ Ce répertoire a été créé dans le cadre du cours d'Outils Informatiques Coll
 
 - **Exercices_ADO** : Ce dossier contient les exercices réalisés pour le cours d'Architecture des Ordinateurs (ADO).
 - **Exercices_GIL** : Ce dossier regroupe les exercices réalisés pour le cours de Gestion de l'Identité en Ligne (GIL).
-- **site_web** : Ce dossier contient les fichiers relatifs au développement d'un site web, incluant des pages HTML, des scripts JavaScript, des feuilles de style CSS, et des images. Les exercices sont réalisés dans le cadre du cours de l'Informatique Fondamentale
+- **site_web** : Ce dossier contient les fichiers relatifs au développement d'un site web, incluant des pages HTML, des scripts JavaScript, des feuilles de style CSS, et des images. Les exercices sont réalisés dans le cadre du cours de l'Informatique Fondamentale.
 - **README.md** : Ce fichier de documentation décrit le contenu et l'organisation du répertoire.
 
 Chaque dossier contient des fichiers spécifiques à chaque exercice, facilitant ainsi l'organisation et l'accès aux ressources nécessaires pour l'apprentissage et le développement des compétences en informatique collaborative.
